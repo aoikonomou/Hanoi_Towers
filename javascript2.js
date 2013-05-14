@@ -1,3 +1,5 @@
+// Hanoi Towers Game Demo
+
 var rods = [[0,0,0],[0,0,0],[0,0,0]];	
 
 var diskNotPlaced = true;
