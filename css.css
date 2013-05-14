@@ -1,0 +1,51 @@
+#Disk1 {
+	
+	text-align:center;
+	background-color: rgb(100,100,100);
+	width: 50px;
+}
+
+#Disk2 {
+	
+	text-align:center;
+	background-color: rgb(100,100,100);
+	width: 100px;
+}
+
+#Disk3 {
+	
+	text-align:center;
+	background-color: rgb(100,100,100);
+	width: 150px;
+}
+
+table#gameTable {
+
+	background-color:#FFFFFF;
+	border: solid #000 3px;
+	width: 600px;
+}
+
+table#gameTable td {
+
+	background-color:#FFFFFF;
+	border: solid #000 3px;
+	padding: 5px;
+	height: 60px;
+}
+
+table#gameTable th {
+
+	background-color:#FFFFFF;
+	border: solid #000 3px;
+	width: 180px;
+}
+
+#debugArea {
+
+	height:300px;
+	width:380px;
+	background-color: rgb(100,200,250);
+	border-radius: 15px;
+	padding: 10px;
+}

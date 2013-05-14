@@ -1,0 +1,66 @@
+ok the game has 3 rods and multiple disks of different sizes
+
+the rule is you can move one disk at a time and you cannot put your disk on top of a smaller one
+
+
+
+ok, classic iterattion problem 
+lol 
+
+
+ok, so lets make it easy, each rod is an array of 3
+ok cool 
+1 is the bottom 
+3 is the top
+ok 
+
+
+
+ok so let's play,
+
+
+
+grab a disk (ok )
+
+put it in a rod
+which rod ?
+the middle 
+
+ok, which position should it go?
+
+well, is the bottom one empty?
+No
+What does it have in it
+It has a disk
+Is it bigger or smaller
+bigger
+ok, put it on top
+well, there is a nother disk on top
+what is it, bigger or smaller?
+bigger
+ok put it on top
+well, there may be something there? well not really but have a check if you want
+
+
+
+
+var rod1 = new Array [] (3 positiions)
+
+function putDisk(diskNum, rodNum){
+
+checkPositions 
+
+put it in the first empty position whilst there isn't a bigger disk below
+
+
+typeOfDiskIfFull
+
+}
+
+return true or false, if true move thing, if false do not
+
+
+----------------------
+
+
+How do i pass the rod variable in. Ok, lets see. variable a, b and c, make a function that selects one, ok, if the incoming variable is 1 then variable 1, 

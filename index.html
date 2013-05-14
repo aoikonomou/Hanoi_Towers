@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Hanoi Towers</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <script src="javascript.js"> </script>
+    <script src="javascript2.js"> </script>
+
+</head>
+
+<body>
+
+    <H1>Hanoi Towers</H1>
+
+
+    <table id="gameTable">
+        <tr>
+            <th> Rod 1</th>
+            <th> Rod 2</th>
+            <th> Rod 3</th>
+        </tr>
+
+        <tr>
+            <td id="r1p1" ondrop="drop(event)" ondragover="allowDrop(event)">Rod 1, Position 1</td>
+            <td id="r2p1" ondrop="drop(event)" ondragover="allowDrop(event)">Rod 2, Position 1</td>
+            <td id="r3p1" ondrop="drop(event)" ondragover="allowDrop(event)">Rod 3, Position 1</td>    
+        </tr>
+
+        <tr>
+            <td id="r1p2" ondrop="drop(event)" ondragover="allowDrop(event)">Rod 1, Position 2</td>
+            <td id="r2p2" ondrop="drop(event)" ondragover="allowDrop(event)">Rod 2, Position 2</td>
+            <td id="r3p2" ondrop="drop(event)" ondragover="allowDrop(event)">Rod 3, Position 2</td>    
+        </tr>
+
+        <tr>
+            <td id="r1p3" ondrop="drop(event)" ondragover="allowDrop(event)">Rod 1, Position 3</td>
+            <td id="r2p3" ondrop="drop(event)" ondragover="allowDrop(event)">Rod 2, Position 3</td>
+            <td id="r3p3" ondrop="drop(event)" ondragover="allowDrop(event)">Rod 3, Position 3</td>    
+        </tr>
+    </table>
+
+    <br>
+
+    <table>
+        <tr>
+            <td><div id="Disk1" class="Disk" draggable="true" ondragstart="drag(event)">Disk 1</div></td>
+        </tr>
+
+        <tr>
+            <td><div id="Disk2" class="Disk" draggable="true" ondragstart="drag(event)">Disk 2</div></td>
+        </tr>
+
+        <tr>
+            <td><div id="Disk3" class="Disk" draggable="true" ondragstart="drag(event)">Disk 3</div></td>
+        </tr>
+    </table>
+
+    <div id="initMatrix";>
+
+    </div>
+    
+    <input type="button" onclick="putDisk(0,3,1)" value="Show alert box">
+
+
+    <div id="debugArea";>Debug Area</div>
+    
+</body>
+</html>
