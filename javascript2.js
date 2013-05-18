@@ -23,7 +23,7 @@ function putDisk(diskBeingDragged, myRodTarget, ev, myTarget, idDrag){
 			
 			myTarget = myTarget.slice(0,3).concat("3"); // change the target cell from the target you are hovering over to the bottom of the rod if empty.
 			
-			alert(myTarget+" I am in rod "+myRodTarget+" position "+myTarget);
+			//alert(myTarget+" I am in rod "+myRodTarget+" position "+myTarget);
 			
 			executeDiskPlacement2(ev, myTarget, idDrag); // I am not passing the right variable here for which position to graphically update
 			//diskNotPlaced = false;
@@ -31,7 +31,7 @@ function putDisk(diskBeingDragged, myRodTarget, ev, myTarget, idDrag){
 
 		} else {
 
-			alert("Disk below..." +rods[myRodTarget][2]+" and the disk being dragged is "+diskBeingDragged);
+			//alert("Disk below..." +rods[myRodTarget][2]+" and the disk being dragged is "+diskBeingDragged);
 
 			if (rods[myRodTarget][1] == 0 && diskBeingDragged < rods[myRodTarget][2]) { // if the position immediately above is empty and the disk below is bigger..
 				emptyPreviousLocation(diskBeingDragged); //...remove this disk from any previous locations...
@@ -96,7 +96,7 @@ function executeDiskPlacement2(ev, myTarget, idDrag){
 function tellMe(){
 	for (var i = 0; i<3; i++) {
 		for (var j = 0; j<3; j++){
-			 document.getElementById("debugArea").innerText += "\n Rod "+ i + " position "+j+" has "+ rods[i][j]+" in it";
+			 document.getElementById("textArea").value += "\n Rod "+ i + " position "+j+" has "+ rods[i][j]+" in it";
 		}
 	}
 }
